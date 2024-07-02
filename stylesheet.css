@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #A3C9AA;
+    color: #FFFFFF;
+    padding: 20px 0;
+    border-bottom: 3px solid #9B4444;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #9B4444;
+    font-weight: bolder;
+    font-family: Georgia, serif;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #C68484;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-family: 'Didot', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#bio > div > form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+    font-family: Georgia, serif;
+}
+
+#bio > div > form > button{
+    margin: 20px 220px;
+    background-color: #9B4444;
+    color: white;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 0;
+}
+
+#bio > div > form > label {
+    font-weight: bolder;
+    text-align: center;
+}
+
+#name, #email, #message{
+    padding: 10px 0;
+    margin: 0 75px;
+}
+
+
+#bio > div > p{
+    text-align: center;
+}
+
+#bio > div > ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#bio > div > ul > li:nth-child(1){
+    margin: 0 10px;
+}
+
+#bio > div > ul > li:nth-child(2){
+    margin: 0 10px;
+}
+
+#bio > div > ul > li:nth-child(3){
+    margin: 0 10px;
+}
+
+#bio > div > ul > li:nth-child(4){
+    margin: 0 10px;
+}
+
+#bio > div > ul > li:nth-child(5) {
+    margin: 0 10px;
+}
+
+
+footer {
+    background-color: #A3C9AA;
+    color: #FFFFFF;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 3px solid #9B4444;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+section#bio {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+section#bio h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    color: #9B4444;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #9B4444;
+    padding-bottom: 10px;
+}
+
+#bio > div > div > img{
+    width: 490px;
+    height: 335px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+#bio > div > div > p{
+text-align: center;
+    padding:16px 10px;
+    }
+
+#bio > div > p:nth-child(4) > a{
+    color: #666666;
+    /*text-decoration: none;*/
+}
+
+
+
+#bio > div > div.osnovno.expanded > p{
+    padding:10px 10px;
+}
+#bio > div > div.balet.expanded > p:nth-child(2){
+    padding:10px 10px;
+}
+#bio > div > div.balet.expanded > p:nth-child(3){
+    padding:10px 10px;
+}
+#bio > div > div.balet.expanded > p:nth-child(4){
+    padding:10px 10px;
+}
+#bio > div > div.balet.expanded > p:nth-child(5){
+    padding:10px 10px;
+}
+#bio > div > div.sredno.expanded > p:nth-child(2){
+    padding: 10px 10px;
+}
+#bio > div > div.sredno.expanded > p:nth-child(3){
+    padding: 10px 10px;
+}
+
+#bio > div > div.faks.expanded > p:nth-child(4){
+    padding: 10px 10px;
+}
+#bio > div > div.faks.expanded > p:nth-child(5){
+    padding: 10px 10px;
+}
+
+
+section#bio p {
+    font-size: 1em;
+    color: #666666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    section#bio h2 {
+        font-size: 1.5em;
+    }
+}
+
+.sliki{
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: auto;
+}
+
+
+.sliki-sliki {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sliki-sliki img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+
+.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.next{
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sliki:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+
+

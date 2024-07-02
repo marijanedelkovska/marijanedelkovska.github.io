@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marija Nedelkovska - Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<style>
+    body > header > div > nav > ul > li:nth-child(1){
+        padding-top: 5px;
+    }
+    .osnovno,
+    .balet,
+    .sredno,
+    .faks {
+        max-height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .osnovno::after,
+    .balet::after,
+    .sredno::after,
+    .faks::after {
+        content: '... Continue Reading';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        padding: 4px;
+        cursor: pointer;
+        color: #666666;
+    }
+
+    .osnovno.expanded,
+    .balet.expanded,
+    .sredno.expanded,
+    .faks.expanded {
+        max-height: none;
+    }
+
+    .osnovno.expanded::after,
+    .balet.expanded::after,
+    .sredno.expanded::after,
+    .faks.expanded::after {
+        display: none;
+    }
+</style>
+<body>
+<header>
+    <div class="container">
+        <img src="graduation-cap.png" alt="Education Logo">
+        <nav>
+            <ul>
+                <li><a href="biography.html"><img src="angle-circle-left.png" alt="arrow left"></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="education.html" class="active">Education</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="hobbies.html"><img src="angle-circle-right.png" alt="arrow right"></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="bio">
+    <div class="container">
+        <h2>My Education</h2>
+        <div class="osnovno">
+            <img src="primary.jpg" alt="Blaze Koneski">
+        <h4>Primary School</h4>
+        <p>The process of my education started back in the year 2010. I started Primary School at OOU "Blaze Koneski" in
+            Aerodrom Municipality. I finished primary education in 2019, as an excellent student, and for a long time I
+            was thinking about where to continue my education. </p>
+        </div>
+
+        <div class="balet">
+            <img src="kazuo-ota-CGUZHPQ0l2c-unsplash.jpg" alt="Ballet">
+            <h4>Ballet School</h4>
+            <p>When I was around 7 years old, I attended ballet classes at DMBUC "Ilija Nikolovski - Luj" in Skopje. Ballet was my passion and everyday I was so excited to go to class. I was dancing for 8 years, up until I finished primary school. </p>
+            <p>In those years, we had many concerts and competitions all over Macedonia. Each season there was a finishing concert where we would present the dances and the things we learned through the year.</p>
+            <p>I have earned many diplomas, certificates and medals, and I'm so proud of everything we had achieved as a team.</p>
+        </div>
+
+        <div class="sredno">
+            <img src="shubham-sharan-Z-fq3wBVfMU-unsplash.jpg" alt="High school">
+            <h4>High School</h4>
+            <p>In the end, however, I decided that SUGS "Rade Jovcevski - Korcagin", was the best option. So I started high
+                school in 2019, and was very happy because I knew I made the right decision.</p>
+            <p>In the third year of secondary school, I took part in "Imam Stav". An activity supported by the Assembly of
+                Macedonia. In the final we competed with two other schools, and we won the second place. Overall high
+                school, was a nice experience and I also learned a lot. </p>
+        </div>
+
+        <div class="faks">
+            <img src="uni.jpg" alt="Uni">
+            <h4>University</h4>
+            <p>In the last year of high school I was sure I wanted to continue my education studying about technology and computer science. So the decision was easy, I applied to the Faculty of Cpm[uter Science and Engineering (FINKI). I was so happy to get into my dream university.</p>
+            <p>I'm finishing my first year, but I can say that I really like it and in the future, I wish to continue working in this field.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Marija Nedelkovska. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.querySelectorAll('.osnovno, .balet, .sredno, .faks').forEach(item => {
+        item.addEventListener('click', function() {
+            this.classList.toggle('expanded');
+        });
+    });
+</script>
+</body>
+</html>
+
